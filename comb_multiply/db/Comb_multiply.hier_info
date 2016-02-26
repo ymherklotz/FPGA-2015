@@ -1,0 +1,783 @@
+|Comb_multiply
+Output[0] <= M[0].DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= M[1].DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= M[2].DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= M[3].DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= M[4].DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= M[5].DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= M[6].DB_MAX_OUTPUT_PORT_TYPE
+Output[7] <= M[7].DB_MAX_OUTPUT_PORT_TYPE
+Output[8] <= M[8].DB_MAX_OUTPUT_PORT_TYPE
+Output[9] <= M[9].DB_MAX_OUTPUT_PORT_TYPE
+Y[0] => inst5.IN1
+Y[0] => inst6.IN1
+Y[0] => inst7.IN1
+Y[0] => inst8.IN1
+Y[0] => inst9.IN1
+Y[1] => ten_bit_adder_NO_BUS:inst.ENY
+Y[2] => ten_bit_adder_NO_BUS:inst1.ENY
+Y[3] => ten_bit_adder_NO_BUS:inst2.ENY
+Y[4] => ten_bit_adder_NO_BUS:inst3.ENY
+X[0] => inst5.IN0
+X[0] => ten_bit_adder_NO_BUS:inst.Y1
+X[0] => ten_bit_adder_NO_BUS:inst1.Y2
+X[0] => ten_bit_adder_NO_BUS:inst2.Y3
+X[0] => ten_bit_adder_NO_BUS:inst3.Y4
+X[1] => inst6.IN0
+X[1] => ten_bit_adder_NO_BUS:inst.Y2
+X[1] => ten_bit_adder_NO_BUS:inst1.Y3
+X[1] => ten_bit_adder_NO_BUS:inst2.Y4
+X[1] => ten_bit_adder_NO_BUS:inst3.Y5
+X[2] => inst7.IN0
+X[2] => ten_bit_adder_NO_BUS:inst.Y3
+X[2] => ten_bit_adder_NO_BUS:inst1.Y4
+X[2] => ten_bit_adder_NO_BUS:inst2.Y5
+X[2] => ten_bit_adder_NO_BUS:inst3.Y6
+X[3] => inst8.IN0
+X[3] => ten_bit_adder_NO_BUS:inst.Y4
+X[3] => ten_bit_adder_NO_BUS:inst1.Y5
+X[3] => ten_bit_adder_NO_BUS:inst2.Y6
+X[3] => ten_bit_adder_NO_BUS:inst3.Y7
+X[4] => inst9.IN0
+X[4] => ten_bit_adder_NO_BUS:inst.Y5
+X[4] => ten_bit_adder_NO_BUS:inst1.Y6
+X[4] => ten_bit_adder_NO_BUS:inst2.Y7
+X[4] => ten_bit_adder_NO_BUS:inst3.Y8
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3
+Cout <= full_adder:inst17.Cout
+X9 => full_adder:inst17.X
+Y9 => inst25.IN0
+ENY => inst25.IN1
+ENY => inst24.IN1
+ENY => inst23.IN1
+ENY => inst22.IN1
+ENY => inst21.IN1
+ENY => inst20.IN1
+ENY => inst19.IN1
+ENY => inst18.IN1
+ENY => inst7.IN1
+ENY => inst6.IN1
+X8 => full_adder:inst16.X
+Y8 => inst24.IN0
+X7 => full_adder:inst15.X
+Y7 => inst23.IN0
+X6 => full_adder:inst14.X
+Y6 => inst22.IN0
+X5 => full_adder:inst13.X
+Y5 => inst21.IN0
+X4 => full_adder:inst12.X
+Y4 => inst20.IN0
+X3 => full_adder:inst11.X
+Y3 => inst19.IN0
+X2 => full_adder:inst10.X
+Y2 => inst18.IN0
+X1 => full_adder:inst9.X
+Y1 => inst7.IN0
+X0 => full_adder:inst8.X
+Y0 => inst6.IN0
+S0 <= full_adder:inst8.SUM
+S1 <= full_adder:inst9.SUM
+S2 <= full_adder:inst10.SUM
+S3 <= full_adder:inst11.SUM
+S4 <= full_adder:inst12.SUM
+S5 <= full_adder:inst13.SUM
+S6 <= full_adder:inst14.SUM
+S7 <= full_adder:inst15.SUM
+S8 <= full_adder:inst16.SUM
+S9 <= full_adder:inst17.SUM
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst17
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst16
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst15
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst14
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst13
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst12
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst11
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst10
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst9
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst3|full_adder:inst8
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2
+Cout <= full_adder:inst17.Cout
+X9 => full_adder:inst17.X
+Y9 => inst25.IN0
+ENY => inst25.IN1
+ENY => inst24.IN1
+ENY => inst23.IN1
+ENY => inst22.IN1
+ENY => inst21.IN1
+ENY => inst20.IN1
+ENY => inst19.IN1
+ENY => inst18.IN1
+ENY => inst7.IN1
+ENY => inst6.IN1
+X8 => full_adder:inst16.X
+Y8 => inst24.IN0
+X7 => full_adder:inst15.X
+Y7 => inst23.IN0
+X6 => full_adder:inst14.X
+Y6 => inst22.IN0
+X5 => full_adder:inst13.X
+Y5 => inst21.IN0
+X4 => full_adder:inst12.X
+Y4 => inst20.IN0
+X3 => full_adder:inst11.X
+Y3 => inst19.IN0
+X2 => full_adder:inst10.X
+Y2 => inst18.IN0
+X1 => full_adder:inst9.X
+Y1 => inst7.IN0
+X0 => full_adder:inst8.X
+Y0 => inst6.IN0
+S0 <= full_adder:inst8.SUM
+S1 <= full_adder:inst9.SUM
+S2 <= full_adder:inst10.SUM
+S3 <= full_adder:inst11.SUM
+S4 <= full_adder:inst12.SUM
+S5 <= full_adder:inst13.SUM
+S6 <= full_adder:inst14.SUM
+S7 <= full_adder:inst15.SUM
+S8 <= full_adder:inst16.SUM
+S9 <= full_adder:inst17.SUM
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst17
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst16
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst15
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst14
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst13
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst12
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst11
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst10
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst9
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst2|full_adder:inst8
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1
+Cout <= full_adder:inst17.Cout
+X9 => full_adder:inst17.X
+Y9 => inst25.IN0
+ENY => inst25.IN1
+ENY => inst24.IN1
+ENY => inst23.IN1
+ENY => inst22.IN1
+ENY => inst21.IN1
+ENY => inst20.IN1
+ENY => inst19.IN1
+ENY => inst18.IN1
+ENY => inst7.IN1
+ENY => inst6.IN1
+X8 => full_adder:inst16.X
+Y8 => inst24.IN0
+X7 => full_adder:inst15.X
+Y7 => inst23.IN0
+X6 => full_adder:inst14.X
+Y6 => inst22.IN0
+X5 => full_adder:inst13.X
+Y5 => inst21.IN0
+X4 => full_adder:inst12.X
+Y4 => inst20.IN0
+X3 => full_adder:inst11.X
+Y3 => inst19.IN0
+X2 => full_adder:inst10.X
+Y2 => inst18.IN0
+X1 => full_adder:inst9.X
+Y1 => inst7.IN0
+X0 => full_adder:inst8.X
+Y0 => inst6.IN0
+S0 <= full_adder:inst8.SUM
+S1 <= full_adder:inst9.SUM
+S2 <= full_adder:inst10.SUM
+S3 <= full_adder:inst11.SUM
+S4 <= full_adder:inst12.SUM
+S5 <= full_adder:inst13.SUM
+S6 <= full_adder:inst14.SUM
+S7 <= full_adder:inst15.SUM
+S8 <= full_adder:inst16.SUM
+S9 <= full_adder:inst17.SUM
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst17
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst16
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst15
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst14
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst13
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst12
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst11
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst10
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst9
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst1|full_adder:inst8
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst
+Cout <= full_adder:inst17.Cout
+X9 => full_adder:inst17.X
+Y9 => inst25.IN0
+ENY => inst25.IN1
+ENY => inst24.IN1
+ENY => inst23.IN1
+ENY => inst22.IN1
+ENY => inst21.IN1
+ENY => inst20.IN1
+ENY => inst19.IN1
+ENY => inst18.IN1
+ENY => inst7.IN1
+ENY => inst6.IN1
+X8 => full_adder:inst16.X
+Y8 => inst24.IN0
+X7 => full_adder:inst15.X
+Y7 => inst23.IN0
+X6 => full_adder:inst14.X
+Y6 => inst22.IN0
+X5 => full_adder:inst13.X
+Y5 => inst21.IN0
+X4 => full_adder:inst12.X
+Y4 => inst20.IN0
+X3 => full_adder:inst11.X
+Y3 => inst19.IN0
+X2 => full_adder:inst10.X
+Y2 => inst18.IN0
+X1 => full_adder:inst9.X
+Y1 => inst7.IN0
+X0 => full_adder:inst8.X
+Y0 => inst6.IN0
+S0 <= full_adder:inst8.SUM
+S1 <= full_adder:inst9.SUM
+S2 <= full_adder:inst10.SUM
+S3 <= full_adder:inst11.SUM
+S4 <= full_adder:inst12.SUM
+S5 <= full_adder:inst13.SUM
+S6 <= full_adder:inst14.SUM
+S7 <= full_adder:inst15.SUM
+S8 <= full_adder:inst16.SUM
+S9 <= full_adder:inst17.SUM
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst17
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst16
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst15
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst14
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst13
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst12
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst11
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst10
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst9
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comb_multiply|ten_bit_adder_NO_BUS:inst|full_adder:inst8
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

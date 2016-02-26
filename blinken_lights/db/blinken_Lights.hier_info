@@ -1,0 +1,30 @@
+|blinken_Lights
+LEDOUT[0] <= inst63.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[1] <= inst64.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[2] <= inst67.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[3] <= inst68.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[4] <= inst71.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[5] <= inst72.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[6] <= inst75.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[7] <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[8] <= inst79.DB_MAX_OUTPUT_PORT_TYPE
+LEDOUT[9] <= inst80.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => altclkctrl0:inst.inclk
+
+
+|blinken_Lights|altclkctrl0:inst
+inclk => altclkctrl0_altclkctrl_uhi:altclkctrl0_altclkctrl_uhi_component.inclk[0]
+outclk <= altclkctrl0_altclkctrl_uhi:altclkctrl0_altclkctrl_uhi_component.outclk
+
+
+|blinken_Lights|altclkctrl0:inst|altclkctrl0_altclkctrl_uhi:altclkctrl0_altclkctrl_uhi_component
+clkselect[0] => clkctrl1.CLKSELECT
+clkselect[1] => clkctrl1.CLKSELECT1
+ena => clkctrl1.ENA
+inclk[0] => clkctrl1.INCLK
+inclk[1] => clkctrl1.INCLK1
+inclk[2] => clkctrl1.INCLK2
+inclk[3] => clkctrl1.INCLK3
+outclk <= clkctrl1.CLK
+
+

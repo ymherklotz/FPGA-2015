@@ -1,0 +1,289 @@
+|one_hertz_clock
+1_Hz <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst77.CLK
+CLK => inst72.CLK
+CLK => inst67.CLK
+CLK => inst63.CLK
+CLK => inst58.CLK
+CLK => inst48.CLK
+CLK => inst43.CLK
+CLK => inst389.CLK
+CLK => inst50.CLK
+CLK => inst459.CLK
+CLK => inst40.CLK
+CLK => inst38.CLK
+CLK => inst3799999.CLK
+CLK => inst82.CLK
+CLK => inst97.CLK
+CLK => inst92.CLK
+CLK => inst87.CLK
+CLK => inst102.CLK
+CLK => inst107.CLK
+
+
+|one_hertz_clock|full_adder:inst78
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst73
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst68
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst37
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst59
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst49
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst449
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst369
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst51
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst46
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst41
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst36
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst999
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst83
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst98
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst93
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst88
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst103
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|one_hertz_clock|full_adder:inst108
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst4.IN1
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN1
+Cin => inst2.IN1
+Cin => inst5.IN0
+Cin => inst4.IN0
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

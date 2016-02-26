@@ -1,0 +1,44 @@
+|bcd_to_display
+DISPout[0] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+DISPout[1] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+DISPout[2] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+DISPout[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+DISPout[4] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+DISPout[5] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+DISPout[6] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BCDin[0] => inst4.IN0
+BCDin[0] => inst16.IN1
+BCDin[0] => inst9.IN0
+BCDin[0] => inst19.IN0
+BCDin[0] => inst6.IN3
+BCDin[0] => inst14.IN0
+BCDin[0] => inst26.IN0
+BCDin[0] => inst36.IN0
+BCDin[0] => inst37.IN0
+BCDin[1] => inst8.IN0
+BCDin[1] => inst10.IN0
+BCDin[1] => inst19.IN1
+BCDin[1] => inst13.IN0
+BCDin[1] => inst25.IN0
+BCDin[1] => inst24.IN0
+BCDin[1] => inst28.IN0
+BCDin[1] => inst31.IN0
+BCDin[1] => inst34.IN0
+BCDin[1] => inst40.IN0
+BCDin[1] => inst41.IN0
+BCDin[2] => inst3.IN0
+BCDin[2] => inst16.IN0
+BCDin[2] => inst11.IN0
+BCDin[2] => inst6.IN2
+BCDin[2] => inst15.IN0
+BCDin[2] => inst26.IN2
+BCDin[2] => inst33.IN1
+BCDin[2] => inst39.IN1
+BCDin[2] => inst38.IN0
+BCDin[3] => inst8.IN3
+BCDin[3] => inst6.IN0
+BCDin[3] => inst5.IN0
+BCDin[3] => inst2.IN0
+BCDin[3] => inst1.IN0
+
+
