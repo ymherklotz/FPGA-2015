@@ -1,0 +1,183 @@
+|stopclock
+clk => clk.IN1
+button0 => button0.IN1
+button1 => button1.IN2
+button2 => button2.IN4
+hex0[0] << dec_to_seven_segment:dss0.out
+hex0[1] << dec_to_seven_segment:dss0.out
+hex0[2] << dec_to_seven_segment:dss0.out
+hex0[3] << dec_to_seven_segment:dss0.out
+hex0[4] << dec_to_seven_segment:dss0.out
+hex0[5] << dec_to_seven_segment:dss0.out
+hex0[6] << dec_to_seven_segment:dss0.out
+hex1[0] << dec_to_seven_segment:dss1.out
+hex1[1] << dec_to_seven_segment:dss1.out
+hex1[2] << dec_to_seven_segment:dss1.out
+hex1[3] << dec_to_seven_segment:dss1.out
+hex1[4] << dec_to_seven_segment:dss1.out
+hex1[5] << dec_to_seven_segment:dss1.out
+hex1[6] << dec_to_seven_segment:dss1.out
+hex2[0] << dec_to_seven_segment:dss2.out
+hex2[1] << dec_to_seven_segment:dss2.out
+hex2[2] << dec_to_seven_segment:dss2.out
+hex2[3] << dec_to_seven_segment:dss2.out
+hex2[4] << dec_to_seven_segment:dss2.out
+hex2[5] << dec_to_seven_segment:dss2.out
+hex2[6] << dec_to_seven_segment:dss2.out
+hex3[0] << dec_to_seven_segment:dss3.out
+hex3[1] << dec_to_seven_segment:dss3.out
+hex3[2] << dec_to_seven_segment:dss3.out
+hex3[3] << dec_to_seven_segment:dss3.out
+hex3[4] << dec_to_seven_segment:dss3.out
+hex3[5] << dec_to_seven_segment:dss3.out
+hex3[6] << dec_to_seven_segment:dss3.out
+decimal_point << <GND>
+
+
+|stopclock|hundred_hertz_clock:clockConv
+clock_in => clock_out~reg0.CLK
+clock_in => ctr[0].CLK
+clock_in => ctr[1].CLK
+clock_in => ctr[2].CLK
+clock_in => ctr[3].CLK
+clock_in => ctr[4].CLK
+clock_in => ctr[5].CLK
+clock_in => ctr[6].CLK
+clock_in => ctr[7].CLK
+clock_in => ctr[8].CLK
+clock_in => ctr[9].CLK
+clock_in => ctr[10].CLK
+clock_in => ctr[11].CLK
+clock_in => ctr[12].CLK
+clock_in => ctr[13].CLK
+clock_in => ctr[14].CLK
+clock_in => ctr[15].CLK
+clock_in => ctr[16].CLK
+clock_in => ctr[17].CLK
+clock_in => start.CLK
+b1 => start.OUTPUTSELECT
+clock_out <= clock_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stopclock|counter:timeCount
+clock => c3[0]~reg0.CLK
+clock => c3[1]~reg0.CLK
+clock => c3[2]~reg0.CLK
+clock => c3[3]~reg0.CLK
+clock => c2[0]~reg0.CLK
+clock => c2[1]~reg0.CLK
+clock => c2[2]~reg0.CLK
+clock => c2[3]~reg0.CLK
+clock => c1[0]~reg0.CLK
+clock => c1[1]~reg0.CLK
+clock => c1[2]~reg0.CLK
+clock => c1[3]~reg0.CLK
+clock => c0[0]~reg0.CLK
+clock => c0[1]~reg0.CLK
+clock => c0[2]~reg0.CLK
+clock => c0[3]~reg0.CLK
+clock => en.CLK
+b0 => always0.IN1
+b1 => en.OUTPUTSELECT
+c0[0] <= c0[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c0[1] <= c0[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c0[2] <= c0[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c0[3] <= c0[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c1[0] <= c1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c1[1] <= c1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c1[2] <= c1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c1[3] <= c1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c2[0] <= c2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c2[1] <= c2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c2[2] <= c2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c2[3] <= c2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c3[0] <= c3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c3[1] <= c3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c3[2] <= c3[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c3[3] <= c3[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stopclock|dec_to_seven_segment:dss0
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+b2 => out[1]$latch.LATCH_ENABLE
+b2 => out[0]$latch.LATCH_ENABLE
+b2 => out[2]$latch.LATCH_ENABLE
+b2 => out[3]$latch.LATCH_ENABLE
+b2 => out[4]$latch.LATCH_ENABLE
+b2 => out[5]$latch.LATCH_ENABLE
+b2 => out[6]$latch.LATCH_ENABLE
+out[0] <= out[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stopclock|dec_to_seven_segment:dss1
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+b2 => out[1]$latch.LATCH_ENABLE
+b2 => out[0]$latch.LATCH_ENABLE
+b2 => out[2]$latch.LATCH_ENABLE
+b2 => out[3]$latch.LATCH_ENABLE
+b2 => out[4]$latch.LATCH_ENABLE
+b2 => out[5]$latch.LATCH_ENABLE
+b2 => out[6]$latch.LATCH_ENABLE
+out[0] <= out[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stopclock|dec_to_seven_segment:dss2
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+b2 => out[1]$latch.LATCH_ENABLE
+b2 => out[0]$latch.LATCH_ENABLE
+b2 => out[2]$latch.LATCH_ENABLE
+b2 => out[3]$latch.LATCH_ENABLE
+b2 => out[4]$latch.LATCH_ENABLE
+b2 => out[5]$latch.LATCH_ENABLE
+b2 => out[6]$latch.LATCH_ENABLE
+out[0] <= out[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stopclock|dec_to_seven_segment:dss3
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+b2 => out[1]$latch.LATCH_ENABLE
+b2 => out[0]$latch.LATCH_ENABLE
+b2 => out[2]$latch.LATCH_ENABLE
+b2 => out[3]$latch.LATCH_ENABLE
+b2 => out[4]$latch.LATCH_ENABLE
+b2 => out[5]$latch.LATCH_ENABLE
+b2 => out[6]$latch.LATCH_ENABLE
+out[0] <= out[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

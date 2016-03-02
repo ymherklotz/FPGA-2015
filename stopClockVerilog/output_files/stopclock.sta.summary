@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.274
+TNS   : -38.401
+
+Type  : Slow 1200mV 85C Model Setup 'hundred_hertz_clock:clockConv|clock_out'
+Slack : -1.787
+TNS   : -25.453
+
+Type  : Slow 1200mV 85C Model Setup 'button2'
+Slack : -1.727
+TNS   : -34.724
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.504
+TNS   : -0.504
+
+Type  : Slow 1200mV 85C Model Hold 'hundred_hertz_clock:clockConv|clock_out'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'button2'
+Slack : 0.615
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -23.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'button2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'hundred_hertz_clock:clockConv|clock_out'
+Slack : -1.000
+TNS   : -17.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -1.965
+TNS   : -33.034
+
+Type  : Slow 1200mV 0C Model Setup 'hundred_hertz_clock:clockConv|clock_out'
+Slack : -1.522
+TNS   : -21.435
+
+Type  : Slow 1200mV 0C Model Setup 'button2'
+Slack : -1.393
+TNS   : -27.476
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.471
+TNS   : -0.471
+
+Type  : Slow 1200mV 0C Model Hold 'hundred_hertz_clock:clockConv|clock_out'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'button2'
+Slack : 0.519
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -23.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'button2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'hundred_hertz_clock:clockConv|clock_out'
+Slack : -1.000
+TNS   : -17.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.818
+TNS   : -12.731
+
+Type  : Fast 1200mV 0C Model Setup 'hundred_hertz_clock:clockConv|clock_out'
+Slack : -0.550
+TNS   : -6.614
+
+Type  : Fast 1200mV 0C Model Setup 'button2'
+Slack : -0.418
+TNS   : -4.063
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.319
+TNS   : -0.319
+
+Type  : Fast 1200mV 0C Model Hold 'button2'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'hundred_hertz_clock:clockConv|clock_out'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -24.262
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'button2'
+Slack : -3.000
+TNS   : -3.414
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'hundred_hertz_clock:clockConv|clock_out'
+Slack : -1.000
+TNS   : -17.000
+
+------------------------------------------------------------
