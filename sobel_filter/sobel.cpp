@@ -39,6 +39,7 @@
 #include <ac_fixed.h>
 #include "sobel.h"
 #include <iostream>
+#include <cmath>
 
 // shift_class: page 119 HLS Blue Book
 #include "shift_class.h" 
@@ -51,7 +52,6 @@ void sobel(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,
 {
     ac_int<16, false> intensity, inte[KERNEL_WIDTH];
     
-
 // #if 1: use filter
 // #if 0: copy input to output bypassing filter
 #if 1
@@ -73,19 +73,16 @@ void sobel(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,
 		ACC1: 
 		for (i = 0; i < KERNEL_WIDTH; ++i)
 		{
-		    inte[0] += (((regs[i].slc<COLOUR_WL>(2*COLOUR_WL))*XMATRIX[0][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL))*XMATRIX[0][i])+((regs[i].slc<COLOUR_WL>(0))*XMATRIX[0][i])) / 3;
-		    inte[0] += (((regs[i].slc<COLOUR_WL>(2*COLOUR_WL))*YMATRIX[0][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL))*YMATRIX[0][i])+((regs[i].slc<COLOUR_WL>(0))*YMATRIX[0][i])) / 3;
+		    inte[0] += sqrt(pow((((regs[i].slc<COLOUR_WL>(2*COLOUR_WL))*XMATRIX[0][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL))*XMATRIX[0][i])+((regs[i].slc<COLOUR_WL>(0))*XMATRIX[0][i]))/3, 2)+pow((((regs[i].slc<COLOUR_WL>(2*COLOUR_WL))*YMATRIX[0][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL))*YMATRIX[0][i])+((regs[i].slc<COLOUR_WL>(0))*YMATRIX[0][i]))/3, 2));
 		    
-		    inte[1] += (((regs[i].slc<COLOUR_WL>(2*COLOUR_WL + PIXEL_WL))*XMATRIX[1][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL + PIXEL_WL))*XMATRIX[1][i])+((regs[i].slc<COLOUR_WL>(PIXEL_WL))*XMATRIX[1][i])) / 3;
-		    inte[1] += (((regs[i].slc<COLOUR_WL>(2*COLOUR_WL + PIXEL_WL))*YMATRIX[1][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL + PIXEL_WL))*YMATRIX[1][i])+((regs[i].slc<COLOUR_WL>(PIXEL_WL))*YMATRIX[1][i])) / 3;
+		    inte[1] += sqrt(pow((((regs[i].slc<COLOUR_WL>(2*COLOUR_WL + PIXEL_WL))*XMATRIX[1][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL + PIXEL_WL))*XMATRIX[1][i])+((regs[i].slc<COLOUR_WL>(PIXEL_WL))*XMATRIX[1][i]))/3, 2)+pow((((regs[i].slc<COLOUR_WL>(2*COLOUR_WL + PIXEL_WL))*YMATRIX[1][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL + PIXEL_WL))*YMATRIX[1][i])+((regs[i].slc<COLOUR_WL>(PIXEL_WL))*YMATRIX[1][i]))/3, 2));
 		    
-		    inte[2] += (((regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 2*PIXEL_WL))*XMATRIX[2][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL + 2*PIXEL_WL))*XMATRIX[2][i])+((regs[i].slc<COLOUR_WL>(2*PIXEL_WL))*XMATRIX[2][i])) / 3;
-		    inte[2] += (((regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 2*PIXEL_WL))*YMATRIX[2][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL + 2*PIXEL_WL))*YMATRIX[2][i])+((regs[i].slc<COLOUR_WL>(2*PIXEL_WL))*YMATRIX[2][i])) / 3;
+		    inte[2] += sqrt(pow((((regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 2*PIXEL_WL))*XMATRIX[2][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL + 2*PIXEL_WL))*XMATRIX[2][i])+((regs[i].slc<COLOUR_WL>(2*PIXEL_WL))*XMATRIX[2][i]))/3, 2)+pow((((regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 2*PIXEL_WL))*YMATRIX[2][i])+((regs[i].slc<COLOUR_WL>(COLOUR_WL + 2*PIXEL_WL))*YMATRIX[2][i])+((regs[i].slc<COLOUR_WL>(2*PIXEL_WL))*YMATRIX[2][i]))/3, 2));
 		}
 		// add the accumualted value for all processed lines
-		ACC2: 
+		ACC2:
 		for(i = 0; i < KERNEL_WIDTH; i++) 
-		{    
+		{
 			intensity += inte[i];
 		}
 		
@@ -95,7 +92,8 @@ void sobel(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,
 		intensity /= 2*KERNEL_NUMEL;
 	    
 		// group the RGB components into a single signal
-		vout[p] = ((((ac_int<PIXEL_WL, false>)intensity) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)intensity) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)intensity);
+		vout[p] = ((((ac_int<PIXEL_WL, false>)intensity) << (2*COLOUR_WL)) |
+				   (((ac_int<PIXEL_WL, false>)intensity) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)intensity);
 	    
     }
 }   
