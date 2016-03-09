@@ -1,1 +1,0 @@
-# Sobel Filter Catapult
